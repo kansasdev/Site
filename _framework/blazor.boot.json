@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SiteLocal",
   "resources": {
-    "hash": "sha256-GpS6xAYODMAlXoFle0OvEZB6Yn3fLOAey+5FJzwtXu0=",
+    "hash": "sha256-vbwl+iQ84d2ZZglj1O8As2zyNVXQjxBZAHxyZmNCvmk=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.3xr07vhw50.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.pq1s9tpl5w.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -17,7 +17,7 @@
       "Microsoft.Extensions.Primitives.2jafe63jbt.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.iknej2zdh8.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.8eb000j8w7.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
-      "SiteLocal.xsh4biy34b.wasm": "SiteLocal.wasm",
+      "SiteLocal.tkhhavnlxw.wasm": "SiteLocal.wasm",
       "System.Collections.Concurrent.pz9fufkob7.wasm": "System.Collections.Concurrent.wasm",
       "System.Collections.Immutable.7qohpn0ymk.wasm": "System.Collections.Immutable.wasm",
       "System.Collections.a8fqjty3n0.wasm": "System.Collections.wasm",
@@ -76,7 +76,7 @@
       "Microsoft.Extensions.Primitives.2jafe63jbt.wasm": "sha256-DnlMLnoUShENHHG/1JwJlFyv8wwJ0wNnr/fEV/sR2dI=",
       "Microsoft.JSInterop.iknej2zdh8.wasm": "sha256-LuYfR4a5fwfclUwXPnTjZGpINIjF23AhCZmTFWP2xbQ=",
       "Microsoft.JSInterop.WebAssembly.8eb000j8w7.wasm": "sha256-sGms9Oai1ztzgfMsqBvmeKwa5ZyGWr/AEXr6thw0lso=",
-      "SiteLocal.xsh4biy34b.wasm": "sha256-33lYBtGp5PfSjdk5g35uGObygWBDQmM6r6d3chYOGXo=",
+      "SiteLocal.tkhhavnlxw.wasm": "sha256-w7ZC/QY5b3z6RtaoFmkqgheH32S0OkwtMSvUaQeQ0Xg=",
       "System.Collections.Concurrent.pz9fufkob7.wasm": "sha256-VZrFXRQCTEIouVYApnO6XmUmGZMft3sg7pqc/U9zWUA=",
       "System.Collections.Immutable.7qohpn0ymk.wasm": "sha256-b4zsKib8GntTNTWma2lkzkSORSP3AvlrT0QGyfwI12E=",
       "System.Collections.a8fqjty3n0.wasm": "sha256-ZslvuUYjgQ6Aw6gXERRwfmzKxSNAZVDVsRrnq9Ydp6A=",
