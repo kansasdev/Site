@@ -23,7 +23,7 @@ jobs:
         with:
           dotnet-version: 9.0.x
           
-      # Install dotnet wasm buildtools workload
+      # Install dotnet wasm buildtools workload..
       - name: Install .NET WASM Build Tools
         run: dotnet workload install wasm-tools
           
