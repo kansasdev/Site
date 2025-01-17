@@ -1,0 +1,52 @@
+﻿@page "/2025/01/Interconnection_between_systems"
+<h1>Creating interconnectors between systems - current state and the past</h1>
+<p>
+    One of the main tasks I have is to create interconnection between systems. It is basic activity, since it is important to exchange data between entities. 
+    If we are having system, it is often required to create endpoint which can be consumed by some other system. Endpoint should follow common standards, should be secured and to be honest, other party is just interested in our endpoint behavior, no one is interested how your endpoint is implemented, how you handle request. 
+    Of course data you have received should be secured and handled in a proper way but it is often rather a trust you are doing things in a good way.
+</p>
+<p>
+    Wast majority of systems, at least in my environment, are based on Java technology. I am working with .NET technologies, so how it is possible that such different environments can communicate each other?
+    Two different worlds can produce and parse same type of data, even codebase is so different. I think it is something very positive that each environment producers
+    could make some arrangements and agreed on some common standards. No matter what technology you are using, it is producing for you messages which can be easily consumed by some other party which can be based on different technology
+</p>
+<p>
+    Instead of forcing each own standard, companies agreed that we can be different and let's work on something that will help us communicating. When I have started working on that topics back in 2005/2006 the most widely used standard was SOAP.
+    I think that power of serialization which is basically an ability to create xml files from objects is one of the main reasons why technology like .net and Java became so popular.
+    In such environments serialization can be easily made. If you can serialize object to xml, you can send such object over the network and then at the receipent you can deserialize it back.
+    It is so simple and so powerful - no matter how complex your object is, you can easily send it over the network. My previous project, instead of such objects, was like - we are sending you a flat table:
+    in a first column, there is an index, in a second column there is a name, in a third columnt there is a street name etc.
+    We agreed on that and imaginge what would happen if we change our schema .. When we switched to SOAP, we saw different approach - let's create an endpoint and publish a contract containing what type of data we are accepting and expecting.
+    This is the way how SOAP and WSDL work - you are defining a contract and exposing it as a WSDL file. Then, other consumer, no matter what technology he/she is using, can work with it.
+</p>
+<p>
+    Soap standard was widely used in the past, it is still very popular even now since many systems which are with us for many years are having soap endpoints, especially when we are talking about old applications. In my environment it is still wast majority of services.
+    Soap is having rich .net support. We are having old style web service (asmx) and more modern wcf services. Windows Communication Foundation, apart of Windows Presentation Foundation, Windows Workflow Foundation was a part of .net framework 3.0 - large change to .net framework made on 2007.
+    Functionalities available there was enough to me - I was able to create services, able to consume services exposed by other systems.
+</p>
+<p>
+    Soap is of course having some limitations - most important is size of a message. Nature of xml file and its tags is producing large files. They are readable for person but you need more space to store data and more bandwidth to
+    send data. In following years - REST became more popular. To be honest, I wasn't huge fan of Rest - it is a standard for mobile phone and if you want to consume some service from mobile phone, it should be exposed in Rest.
+    Rest is also having rich support in .net framework.
+</p>
+<p>
+    Mean time there were a revolotion in .net technology. .net core was introduced in 2016. New functionalities are given to .net core and .net framework is just supported.
+    .Net core is cross platform, you can run it on Windows, Linux etc. However, when I first try to work with it I was so suprised that part which is very interesting to me (WCF) is not going to be migrated to .net core.
+    I stucked. No new releases to .net framework, no support to WCF and soap server in .net core. You are of course able to consume web service but you are not able to expose your service as soap endpoint.
+    It was big disappointment to me. New wave of changes were coming but I couldn't follow it with all my services made with WCF technology, since they are not supported
+</p>
+<p>Many times I was wondering what was the reason that WCF weren't ported to .net core officially by Microsoft. My initial thought was, without any deeper analysis and other sources, that if you are using WCF technology as a service, you are probably working in some enterprise environment.
+    WCF can be hosted only on Windows, so if you want to create WCF based endpoint, you still need to have valid license for Windows Server as you are hosting your service on IIS and even you need to have for your client, which is called CAL.
+    So I left with my old services, when the changes and new functionalities were introduced only to .net core. I was still wondering why WCF was not ported, even the fact that other projects like SQL Server can be installed outside of Windows Server 
+</p>
+<p>
+    Fortunately, project called CoreWCF has been created. Eventually, using CoreWCF you can host your WCF service on .net core. It is not official Microsoft project, but it allows you to create WCF project in .net core. I have tried to use it and it is working, you can host your WCF projects
+    now on Linux, Docker etc. You are not stucked in old .net framework and you can use new functionalities of .net core.
+</p>
+<p>Decision of not porting WCF to .net core officially was big suprise to me, I have read that we as developers should switch to Rest or Grpc. However if you are working in enterprise environment, such decision can be sometimes kind of revolution. It is not only required you change your service but it requires other services
+    you are communicating with to change its technology. And imagine how hard can be to presume someone to change its system, which often works for many years to Rest or Grpc, just because Microsoft is not allowing you to use WCF anymore in newest release of .net core.
+    
+</p>
+@code {
+
+}

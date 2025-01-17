@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<PageTitle>About site</PageTitle>
+
+<h1>Welcome to my site</h1>
+<p>
+    Hello and greetings. Glad you have visited my site. I hope you have found posted materials here useful and helpful. My posts here are essentials thoughts/solutions I have found useful while doing my dev activities. Sometimes I am writing about my understanding of some specific topics which was interesting to me. When dealing with some specific project, I am dividing it to smaller tasks or problems. Provided description of specific topic can be not the best one but at the time of writing it was ok to me and I have decided to write about it.
+</p>
+<p>
+    I am software architect/developer working for enterprise and dealing with development activities since 2006. I am working in .net technologies. Sometimes I need to work with c++ language for specific modules and mobile/web development too. I am mostly familiar with creating services and interconnectors with other systems.
+    I am trying to follow other trends in software development, but it's getting harder and harder to be up to date with all of them (client applications, web applications, mobile applications, databases, cloud, etc.). 
+</p>
+<p>
+    This site is personal, all oppinnions are private one. You can contact me at <span id="emailPlaceholder"></span>. Ocassionally I am publishing my code at <a href="https://github.com/kansasdev">github</a>
+</p>
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Call the JavaScript function to display the email
+            await JS.InvokeVoidAsync("showEmail", Uri.EscapeDataString("peporm"), Uri.EscapeDataString("gmail.com"), "emailPlaceholder");
+             
+        }
+    }
+        
+
+    [Inject]
+    IJSRuntime JS { get; set; }
+}

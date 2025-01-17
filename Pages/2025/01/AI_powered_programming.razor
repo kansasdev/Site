@@ -1,0 +1,28 @@
+﻿@page "/2025/01/AI_powered_programming"
+<h1>AI powered programming. Thoughts about enhancements of IDE tools and productivity</h1>
+<p>
+    AI powered programming is a new trend in software development. Even right now when I am writing this post, powerful tools which integrate with my Visual Studio helps me a lot. I am writing some statements, and code completion is giving me hints which are just one hit of TAB key ahead.
+    Sometimes they are not very accurate but code completion is trying and trying - at least beginning of a hint is very helpful. It is giving you at least ideas.
+    And to be honest - such functionality is something I wouldn' t expect few years ago. I am astonished with that - based on a context of your previous statement, engine is trying to predict or guess what you are trying to say and try to feed you with a hint.
+    But code completion is not just helping you with a natural language, it can helps you with your project too. Is that OK? I think so - if we are going to think about it as a help to us - not a replacement. 
+</p>
+<p>
+    I don' t remember which Visual Studio version it has started but on that date, definitely it was before a current AI hype. When I was typing my code containing few switches which was enumerating some variable, I saw code completion which was very accurate. Ok - you have just
+    started to enumerate first one, your next idea is to enumerate second one, right? And you just hit TAB key to complete. It was my first experience that something which can help is coming.
+</p>
+<p>Second time, it was when I needed to refactor some of my code. It was quite large file and I need to change some variable names or adding some new property. My code wasn't following strictly DRY (Don't Repeat Yourself) principle and I need to change something in many places. When I did my change for the first time, when I went to next occurence, code completion has guessed what I am doing and I just needed to hit TAB to change my code. Definitely it has speeded up my work. I think that many of us know what I am writing about.</p>
+<p>Maybe it isn't spectacular but it is very positive experience to me. Few months ago we have all seen that AI things went further and now we are having AI assistant which we can integrate to our IDE. I wasn't installing to my environment mainly because it was paid. But since December 2024 we can do basic plan of Github Copilot for free.</p>
+<p>On the other hand I am also thinking how our data are being used with that tool. Am I OK that I share my codebase with that tool? How about my mistakes I am having in my code? Not well secured credentials, secure string etc. At the moment I am not very comfortable with it and I am just testing this tool.</p>
+<p>When I have forgotten for a while about above concerns, I have given a try to Copilot Chat and was also positively suprised. I have given some specific questions and Copilot was giving proper answer to me. I was able to insert provided answer to the code and it just worked</p>
+<p>
+    However after just few days of trying, I had two examples when answers provided by Copilot wasn't sufficent. In a first case I needed some JS function to my web project. Copilot has provided me proper solution but it wasn't working. I have asked two, three times but exception was still just there. In fact
+    it wasn't code problem - my browser just not refreshed my page and I was displaying previous version of code. I ended up with old style debugging when you need to think about whole process and test all potential problems. Developer still need to think and TEST own solution.
+    In a second case I have asked about function to enumerate files and folders inside directory. Function was ok but it doesn't address situation when in a directory there is a another directory and in that directory there is a directory with files etc.
+    So I need to add word "recursion" and then, function was OK. We still need to think what are potential issues we may fall in and we need to ask proper questions
+</p>
+<p>
+    To conclude - I think that AI tools can help us a lot. It is not a replacement, above cases show that we still need to have someone which can interpret and test what was provided. If not, we are going to have software which will fail in more complex scenarios. I am also not very comfortable with situation that there is a tool which analyze my code, send something somewhere etc. Is this all made in a proper way? How about my code secrets I shouldn't have? We probably need to get use to it but I can imagine that there are certain part of industry that won't be able to use it in a daily work. 
+</p>
+@code {
+
+}
