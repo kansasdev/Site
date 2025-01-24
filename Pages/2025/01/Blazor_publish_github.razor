@@ -32,8 +32,18 @@
     Of course it wasn't so easy, so I will explain my steps below
 </p>
 <p>
-    To be continued
+    First of all, you need to create blazor website from a Blazor Web App template (I am refering to Visual Studio), then I have created some content. After that I was following steps on a web page: https://ilovedotnet.org/blogs/blazor-wasm-publishing-to-github-pages -> <blockquote><i>Excuse me for providing no direct link, however putting this address to direct href is providing Set(4) exception. No idea at the moment</i></blockquote>
+    I have followed mentioned steps, but there were some problems, which needs to be fixed
+    <ul>
+        <li>add master branch to main (simply put -master below -main)</li>
+        <li>I haven't published just release, I have uploaded source code to github and have enabled github pages option</li>
+        <li>I needed to allow github workflow to have write permission</li>
+    </ul>
 </p>
+<p>
+    After performing following above step, everytime I made a commit, website is being published
+</p>
+
 @code {
 
 }
